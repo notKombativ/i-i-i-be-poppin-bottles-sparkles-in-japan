@@ -1,8 +1,17 @@
-function runPythonScript() {
-  // Get the path to the Python script.
-  var pythonScriptPath = "path/to/python/script.py";
-  // Run the Python script.
-  subprocess.run(["python", pythonScriptPath]);
-}
-
-<button onclick="runPythonScript()">Run Python Script</button>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Run Python Script</title>
+</head>
+<body>
+  <button onclick="runPythonScript()">Run Python Script</button>
+  <script>
+    function runPythonScript() {
+      // Get the path to the Python script.
+      var pythonScriptPath = "path/to/python/script.py";
+      // Run the Python script.
+      subprocess.run(["python", pythonScriptPath]);
+    }
+  </script>
+</body>
+</html>
